@@ -1,0 +1,149 @@
+
+body {
+    font-size: 24px;
+    font-family: "Work Sans", sans-serif;
+    background-color: #262731;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 75%, 75%;
+    position: absolute;
+    left: 50%;
+    text-align:center;
+    margin-right:-50%;
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: -95%;
+    align-self: center;
+    text-align: center;
+    -webkit-animation: animate-stripes 5s linear infinite;
+    animation: animate-stripes 5s linear infinite;
+    opacity: 0.75;
+}
+
+#gg {
+    -webkit-appearance: none;
+    appearance: none;
+    align-self: center;
+    margin-left: -95%;
+    text-align: center;
+    color: #e2e1e1;
+    -webkit-animation: animate-stripes 5s linear infinite;
+    animation: animate-stripes 5s linear infinite;
+}
+
+.progress-bar {
+    background-color: #262731;
+    border-radius: 2px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.25) inset;
+    width: 300px;
+    height: 40px;
+    position: relative;
+    display: block;
+}
+
+h2 {
+    text-align:center;
+	font-style: italic;
+    color: #f1f1f1;
+    margin-left: -95%;
+	font-size: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+progress[value]::-webkit-progress-value::before {
+    content: '80%';
+    position: absolute;
+    right: 0;
+    top: -125%;
+}
+
+progress[value]::-webkit-progress-value::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 100%;;
+    top: 7px;
+    background-color: #262731;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 800px;
+    height: 75px;
+    border: solid 10px rgb(24, 23, 27);
+    box-shadow: 0 0 5px 5px rgb(24, 23, 27);
+    border-radius: 10px;
+    color: rgb(0, 255, 119);
+}
+
+progress[value]::-moz-progress-bar {
+    background-image: -moz-linear-gradient(135deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -moz-linear-gradient(left, rgb(255, 157, 0), rgb(0, 255, 119));
+    border-radius: 2px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #1D1E28;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, rgb(255, 157, 0), rgb(0, 255, 119));
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
+
+
+.dot-spin {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  border-radius: 11px;
+  background-color: transparent;
+  color: transparent;
+  box-shadow: 0 -18px 0 0 #FF9A00, 12.72984px -12.72984px 0 0 #FF9A00, 18px 0 0 0 #FF9A00, 12.72984px 12.72984px 0 0 rgba(152, 128, 255, 0), 0 18px 0 0 rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 0 rgba(152, 128, 255, 0), -18px 0 0 0 rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 0 rgba(152, 128, 255, 0);
+  animation: dotSpin 1.5s infinite linear;
+}
+
+@keyframes dotSpin {
+  0%,
+  100% {
+    box-shadow: 0 -18px 0 0 #FF9A00, 12.72984px -12.72984px 0 0 #FF9A00, 18px 0 0 0 #FF9A00, 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  12.5% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 0 #FF9A00, 18px 0 0 0 #FF9A00, 12.72984px 12.72984px 0 0 #FF9A00, 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  25% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 0 #FF9A00, 12.72984px 12.72984px 0 0 #FF9A00, 0 18px 0 0 #FF9A00, -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  37.5% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 0 #FF9A00, 0 18px 0 0 #FF9A00, -12.72984px 12.72984px 0 0 #FF9A00, -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  50% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 0 #FF9A00, -12.72984px 12.72984px 0 0 #FF9A00, -18px 0 0 0 #FF9A00, -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+  }
+  62.5% {
+    box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 0 #FF9A00, -18px 0 0 0 #FF9A00, -12.72984px -12.72984px 0 0 #FF9A00;
+  }
+  75% {
+    box-shadow: 0 -18px 0 0 #FF9A00, 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 0 #FF9A00, -12.72984px -12.72984px 0 0 #FF9A00;
+  }
+  87.5% {
+    box-shadow: 0 -18px 0 0 #FF9A00, 12.72984px -12.72984px 0 0 #FF9A00, 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 0 #FF9A00;
+  }
+}
